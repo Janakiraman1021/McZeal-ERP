@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <title>Jaya Engineering College</title>
+  </head>
+  <body>
+
+
+    <!-- Background Circles Start -->
+
+    <div class="bg-circles">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+    </div>
+
+    <!-- Background Circles End -->
+
+    <!-- Overlay Start -->
+
+    <div class="overlay"></div>
+    <a href="#portfolio" class="nav-item link-item" 
+    >Attendence </a
+  >
+
+    <!-- Overlay End -->
+    <section class="portfolio-section sec-padding" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Jaya Prakash</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img
+              src="images/portfolio/candidate.png"
+              alt="portfolio item thumb"
+            />
+          </div>
+          <h3 class="portfolio-item-title"></h3>
+          <button type="button" class="btn view-project-btn">
+            View Source 
+          </button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>
+                Been through a lot in life
+                We have, together
+                Not a single regret I have
+                Not now, not never
+                Best Friends, meant to be
+                Is what we really are
+                Through good times and ba
+                You’re my life’s brightest star
+                Happy birthday
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img
+              src="images/portfolio/crypto.png"
+              alt="portfolio item thumb"
+            />
+          </div>
+          <h3 class="portfolio-item-title">  </h3>
+          <button type="button" class="btn view-project-btn">
+            View Source 
+          </button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>
+                My wish for you on this special day
+                Is that the coming year goes well
+                And may life treat you great in all the ways
+                That my wishes and words can’t tell.
+                
+                Behind you now is yesterday.
+                Let your experience and knowledge pave the way
+                Here’s to you and to your success
+                We know you will give it your best.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img
+              src="images/portfolio/all.png"
+              alt="portfolio item thumb"
+            />
+          </div>
+          <h3 class="portfolio-item-title"> </h3>
+          <button type="button" class="btn view-project-btn">
+             View Source
+          </button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>
+                Another year has passed.
+                A birthday for you is in store
+                May you find this coming year
+                Be one with lots of open doors.
+                
+                Follow your dreams
+                Remember you can achieve
+                All that you dream
+                Whatever your mind can conceive
+                
+                So this poem brings
+                wishes for you
+                in hopes that the coming year
+                is filled with things you love to do.                  </p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img
+              src="images/portfolio/tesla.png"
+              alt="portfolio item thumb"
+            />
+          </div>
+          <h3 class="portfolio-item-title">  </h3>
+          <button type="button" class="btn view-project-btn">
+          View Source     
+          </button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>
+                Another year has passed.
+                A birthday for you is in store
+                May you find this coming year
+                Be one with lots of open doors.
+                
+                Follow your dreams
+                Remember you can achieve
+                All that you dream
+                Whatever your mind can conceive
+                
+                So this poem brings
+                wishes for you
+                in hopes that the coming year
+                is filled with things you love to do.
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img
+              src="images/portfolio/music.png"
+              alt="portfolio item thumb"
+            />
+          </div>
+          <h3 class="portfolio-item-title"></h3>
+          <button type="button" class="btn view-project-btn">
+            View Source 
+          </button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>
+                On your birthday,
+                I wanted you to know
+                that I am so fortunate
+                not only to have such
+                a strong female figure
+                in my life, but also
+                the most reliable,
+                trustworthy friend
+                I could wish for.
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        
+        <!-- Portfolio Item End -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="js/script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="js/login.js"></script>
+
+  <script>
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "janakiramankeerthivelan1021@gmail.com",
+        Password: "gkkxrqutfjqfuick",
+        To: "janakiramankeerthivelan21@gmail.com",
+        From: document.getElementById("email").value,
+        Subject: document.getElementById("subject").value,
+        Body: "Name: " + document.getElementById("name").value
+            + "<br> Message: " + document.getElementById("message").value  
+      }).then((message) => alert("Message Sent Successfully!!"));
+    }
+  </script>
+</body>
+</html>
