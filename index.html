@@ -78,8 +78,8 @@
             <h1>McZeal</h1>
             <h2></h2>
             <a href="#about" class="btn link-item">Student</a>
-            <a href="#about" class="btn link-item">Faculty</a>
-            <a href="#about" class="btn link-item">Alumni</a>
+            <a href="#aboutf" class="btn link-item">Faculty</a>
+            <a href="#aboutal" class="btn link-item">Alumni</a>
           </div>
           <div class="home-img">
             <div class="img-box">
@@ -149,7 +149,120 @@
     </section>
 
     <!-- About Section End -->
+    <!--Faculty Lopgin -->
+    <section class="about-section sec-padding" id="aboutf">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>McZeal Academy Faculty Portal </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box">
+              <img src="images/mczeal.png" alt="about image" />
+            </div>
+          </div>
+          <div class="about-text">
+            <h3>Faculty Login</h3>
+            <input id="nameofstudent" class="inps" placeholder="Your Name" required><br>
+            <br>
+            <input id="email" class="inps" placeholder="User ID" required><br>
+            <br>
+            <input type="password" id="password" class="inps" placeholder="Password" required>
 
+            <br>
+
+            <br>
+            <a onclick="verify()" class="btn link-item">Login</a>
+            <br>
+            <a class="btn link-item">FORGOT PASSWORD</a>
+            <script>
+
+              function verify() {
+                let email = document.getElementById("email").value;
+                let pass = document.getElementById("password").value;
+                if (email == "mczealcit007" || email == "mczealcit008") {
+                  if (pass == 211004 || pass == 170604) {
+                    // window.location("profile.html");
+                    window.alert("Hello Login Successfull");
+                    window.location.href = "profile.html";
+
+
+                  }
+                }
+                else {
+                  window.alert("Login Failured !")
+                }
+
+              }
+
+
+            </script>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Faculty Lopgin End -->
+
+    <!--Alumni Login Portal -->
+    <section class="about-section sec-padding" id="aboutal">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>McZeal Academy Alumni Portal </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box">
+              <img src="images/mczeal.png" alt="about image" />
+            </div>
+          </div>
+          <div class="about-text">
+            <h3>Alumni Login</h3>
+            <input id="nameofstudent" class="inps" placeholder="Your Name" required><br>
+            <br>
+            <input id="email" class="inps" placeholder="User ID" required><br>
+            <br>
+            <input type="password" id="password" class="inps" placeholder="Password" required>
+
+            <br>
+
+            <br>
+            <a onclick="verify()" class="btn link-item">Login</a>
+            <br>
+            <a class="btn link-item">FORGOT PASSWORD</a>
+            <script>
+
+              function verify() {
+                let email = document.getElementById("email").value;
+                let pass = document.getElementById("password").value;
+                if (email == "mczealcit007" || email == "mczealcit008") {
+                  if (pass == 211004 || pass == 170604) {
+                    // window.location("profile.html");
+                    window.alert("Hello Login Successfull");
+                    window.location.href = "profile.html";
+
+
+                  }
+                }
+                else {
+                  window.alert("Login Failured !")
+                }
+
+              }
+
+
+            </script>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--Alumni Login Portal End -->
     <!-- Portfolio Section Start -->
     <section class="portfolio-section sec-padding" id="portfolio">
       <div class="container">
